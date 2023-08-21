@@ -1,0 +1,17 @@
+body {
+    margin: 0px;
+    background-color: #ddd;
+}
+.titulo-junior{
+    color: yellow;
+    background-color: #444333;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    padding-left: 500px;
+    border: 2px solid ;
+    border-radius: 100px;
+}
+.titulo-junior:hover{
+    background-color: #ccc;
+    color: rgb(rgb(255,255,255));
+}
