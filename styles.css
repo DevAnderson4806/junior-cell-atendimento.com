@@ -1,6 +1,6 @@
 body {
     margin: 0px;
-    background-color: #ddd;
+    background-color: #eee;
 }
 .titulo-junior{
     color: yellow;
@@ -14,4 +14,11 @@ body {
 .titulo-junior:hover{
     background-color: #ccc;
     color: rgb(rgb(255,255,255));
+}
+.div-rodape{
+    background-color: #eefa00;
+    border-bottom: 4px solid #aaa;
+    padding-top: 9px;
+    padding-bottom: 7px;
+    border-radius: 30px;
 }
