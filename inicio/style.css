@@ -66,3 +66,14 @@ body {
     border-bottom: 2px solid #000;
     color: #000;
 }
+.footer-sub{
+    background-color: #fffa00;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #777;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    border: 5px solid #e0eb4d;
+    margin-top: 5%;
+}
