@@ -62,6 +62,7 @@ body {
 .l-nos{
     text-decoration: none;
     font-size: 20px;
+    color: blue;
 }
 
 .l-nos:hover{
@@ -79,6 +80,19 @@ body {
 .l-atendimento:hover{
     border-bottom: 2px solid #000;
     color: #000;
+}
+
+.l-inicio{
+    text-decoration: none;
+    color: blue;
+    font-size: 20px;
+    margin-left: 40px;
+}
+
+.l-inicio:hover{
+    color: #000;
+    border-bottom: 2px solid #000;
+    padding-bottom: 2.5px;
 }
 
 .footer-sub{

@@ -59,13 +59,13 @@ body {
     border-bottom: 4px solid #777;
 }
 
-.l-nos{
+.l-inicio{
     text-decoration: none;
     font-size: 20px;
     color: blue;
 }
 
-.l-nos:hover{
+.l-inicio:hover{
     border-bottom: 2px solid #000;
     color: #000;
 }
@@ -128,11 +128,6 @@ body {
 
 #cel-apple{
     margin: 70px;
-}
-#android{
-    width: auto;
-    height: 500px;
-    overflow: hidden;
 }
 
 .div-image-cel{
