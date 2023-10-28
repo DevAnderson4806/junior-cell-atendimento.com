@@ -2,6 +2,10 @@
     --amarelopadrão:  #fffa00;
 }
 
+*{
+    padding: 0;
+}
+
 body {
     margin: 0px;
     background-color: #eee;
@@ -19,6 +23,8 @@ body {
     padding-left: 70px;
     border: 4px solid #aaa;
     margin-bottom: 5px;
+    text-shadow: 2px 2px 0px #fff;
+    animation: animation_rgb 5s linear infinite, animation_o 1s linear;
 }
 
 .txt-cell{
@@ -33,16 +39,19 @@ body {
     border-radius: 50px;
     margin-right: 350px;
     border: 5px solid #aaa;
+    animation: animation_rgb 5s linear infinite, animation_o 1s linear;
 }
 
 .txt-junior:hover{
     background-color: #000;
     color: var(--amarelopadrão);
+    text-shadow: none;
 }
 
 .txt-cell:hover{
     background-color: var(--amarelopadrão);
     color: #000;
+    text-shadow: 3px 3px 0px #fff;
 }
 
 .nav-rodape{
@@ -104,6 +113,7 @@ body {
     font-style: italic;
     border: 5px solid #e0eb4d;
     margin-top: 5%;
+    animation: animation_f2 1s linear; 
 }
 
 .falar-conosco{
@@ -129,10 +139,10 @@ body {
 #cel-apple{
     margin: 70px;
 }
-#android{
-    width: auto;
-    height: 500px;
-    overflow: hidden;
+#logo-android{
+    padding: 0;
+    width: 400px;
+    height: 400px;
 }
 
 .div-image-cel{
@@ -165,8 +175,103 @@ body {
 
 .imagems-tops{
     height: 50px;
+    animation: animation_f 1s linear,animation_icons .9s  linear infinite ;
+    transition: .6s;
 }
 .div-imagems-tops{
     /* responsividade */
     background-color: transparent;
+}
+
+@keyframes animation_o{
+    from{
+        opacity: 0;
+        margin-left: -200px;
+    }
+    to{
+        opacity: 1;
+        margin-left: 390px;
+    }
+}
+
+@keyframes animation_f{
+    from{
+        opacity: 0;
+        margin-left: -1000px;
+    }
+    
+    to{
+        opacity: 1;
+        margin-left: 10px;
+    }
+}
+
+@keyframes animation_f2{
+    from{
+        opacity: 0;
+        bottom: -100px;
+    }
+
+    to{
+        opacity: 1;
+        bottom: 10px;
+    }
+}
+
+@keyframes animation_rgb{
+    0%{
+        color: #244333;
+        background-color: var(--amarelopadrão);
+        border: 4px solid #aaa;
+        text-shadow: 2px 2px 0px #fff;
+        }
+
+    25%{
+        background-color: #000;
+        color: var(--amarelopadrão);
+        text-shadow: none;
+    
+    }
+
+    50%{
+        color: var(--amarelopadrão);
+        color: #244333;
+        text-shadow: 2px 2px 0px #fff;
+    
+    }
+
+    100%{
+        color: #244333;
+        background-color: var(--amarelopadrão);
+        border: 4px solid #aaa;
+        text-shadow: 2px 2px 0px #fff;
+        
+    }
+}
+
+@keyframes animation_icons{
+    0%{
+        transform: scale(1);
+        transition: .6s;
+    }
+
+    25%{
+        transform: scale(1.5);
+        transition: 10s;
+    }
+
+    50%{
+        transform: scale(1.25);
+        transition: .10s;
+    }
+
+    75%{
+        transform: scale(1.50);
+        transition: .6s;
+    }
+
+    100%{
+        transform: scale(1);
+        transition: 5s;
+    }
 }
