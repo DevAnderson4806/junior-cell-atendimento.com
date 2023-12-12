@@ -5,6 +5,7 @@
 body{
     margin: 0;
     background-color: #eee;
+    overflow-x: hidden;
 }
 
 .txt-junior{
@@ -99,6 +100,8 @@ body{
 .div-formas{
     background-color: var(--amarelopadrão);
     color: #000;
+    margin-bottom: 50px;
+    transition: .9s;
 }
 
 .div-rodape{
@@ -117,7 +120,7 @@ body{
 
 .l-nos{
     text-decoration: none;
-    font-size: 20px;
+    font-size: 25px;
     color: blue;
 }
 
@@ -130,7 +133,7 @@ body{
     color: blue;
     text-decoration: none;
     margin-left: 40px;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .l-pagina-inicial:hover{
@@ -141,7 +144,7 @@ body{
 .l-cuidados{
     text-decoration: none;
     color: blue;
-    font-size: 20px;
+    font-size: 25px;
     margin-left: 40px;
 }
 
@@ -160,61 +163,62 @@ body{
 }
 
 .txt-atd-1{
+    text-align: center;
     color: #000;
     border: 5px solid #999;
     border-radius: 50px;
-    width: 360px;
-    height: 40px;
-    margin-left: 250px;
+    width: 60%;
+    height: auto;
+    margin-left: 20%;
     background-color: var(--amarelopadrão);
     padding-top: 10px;
-    padding-bottom: 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 40px;
+    font-size: 60px;
+    transition: .6s;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 3px rgba(245, 245, 245, 0.9);
 }
 
 .txt-atd-1:hover{
     color: var(--amarelopadrão);
     border: 5px solid #eee;
     border-radius: 50px;
-    width: 360px;
-    height: 40px;
-    margin-left: 250px;
+    width: 60%;
+    height: auto;
     background-color: #555;
-    padding-top: 10px;
-    padding-bottom: 20px;
+    padding-top: 1%;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 40px;
+    font-size: 60px;
+    transition: .6s;
+    transform: scale(1.1);
+    text-shadow: 2px 2px 5px rgba(5, 5, 5, 0.9);
 }
 
 .txt-atd-2,.txt-atd-3,.txt-atd-4{
     color: #999;
-    border-bottom: 5px solid #000;
-    border-top: 3px solid #777;
-    border-radius: 50px;
+    border-bottom: 4.5px solid #000;
     padding: 5px;
     font-family: Arial, Helvetica, sans-serif;
     margin-left: 90px;
     margin-right: 90px;
     margin-top: 50px;
-    font-size: 25px;
+    font-size: 30px;
 }
 
 .div-formas{
     text-align: center;
-    width: 900px;
-    height: 500px;
-    margin-left: 180px;
+    width: calc(100vh + 100px);
+    height: calc(100vh - 200px);
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
-/*.div-formas:hover{
-    width: 950px;
-    height: 650px;
-    margin-left: 150px;
-    text-align: center;
-    margin-bottom: 60px;
-    font-size: 40px;
-}*/
+.div-formas:hover{
+    transition: .6s;
+    transform: scale(1.2);
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
 
 .footer-sub{
     background-color: var(--amarelopadrão);
@@ -233,9 +237,89 @@ body{
 }*/
 
 .img-principal{
-    width: auto;
-    height: 130px;
+    width: 500px;
+    height: 400px;
+    border-radius: 20px;
+    margin-left: 30%;
+    margin-bottom: 10%;
 }
+
+.default{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.default .section-title,
+.default .section-desc{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.default .section-title{
+    font-size: 20px;
+}
+
+.default .section-desc{
+    font-size: 12px;
+    color: #ccc;
+    margin-top: 13px;
+    margin-bottom: 40px;
+}
+
+.default .section-body{
+    max-width: 1140px;
+    min-height: 100px;
+    margin: auto;
+}
+
+.default.light{
+    background-color: #f7f7f7;
+}
+
+.default.light .section-title{
+    color: #000;
+}
+
+.default.dark {
+    color: #fff;
+}
+
+.section-services{
+    display: flex;
+}
+
+.section-service{
+    flex: 1;
+    text-align: center;
+}
+
+.default.dark{
+    background-color: #000;
+    margin-bottom: 10%;
+    margin-top: 10%;
+}
+
+.default.dark .section-title{
+    color: #fff;
+}
+
+.imagems-tops{
+    height: 50px;
+    animation: animation_f 1s linear,animation_icons .9s  linear infinite ;
+    transition: .6s;
+}
+.div-imagems-tops{
+    /* responsividade */
+    background-color: transparent;
+}
+
+
+iframe{
+    width: calc(100vh + 500px);
+    height: 40vh;
+}
+
 
 @keyframes animation_o{
     from{

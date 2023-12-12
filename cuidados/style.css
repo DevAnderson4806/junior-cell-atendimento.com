@@ -21,6 +21,7 @@ body {
     animation: animation_rgb 5s linear infinite, animation_o 1s linear;
     text-align: center;
     padding-top: 2px;
+    margin-top: calc(100% - 95%);
 }
 
 .txt-cell{
@@ -64,7 +65,7 @@ body {
 
 .l-nos{
     text-decoration: none;
-    font-size: 20px;
+    font-size: 25px;
     color: blue;
 }
 
@@ -77,7 +78,7 @@ body {
     color: blue;
     text-decoration: none;
     margin-left: 40px;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .l-atendimento:hover{
@@ -88,7 +89,7 @@ body {
 .l-inicio{
     text-decoration: none;
     color: blue;
-    font-size: 20px;
+    font-size: 25px;
     margin-left: 40px;
 }
 
@@ -156,6 +157,13 @@ ul {
     padding-bottom: 10px;
     line-height: 50px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.8);
+    margin-bottom: calc(100% - 80%);
+    transition: .6s;
+}
+
+.bem-vindo:hover{
+    transition: .6s;
+    transform: scale(1.1);
 }
 
 .bem-vnd{
@@ -165,6 +173,93 @@ ul {
     text-shadow: 2.5px 2px 5px rgb(5, 5, 5, 0.9);
     border-radius: 20px;
     justify-content: space-between;
+    transition: .6s;
+}
+
+.bem-vnd:hover{
+    color: #555;
+    text-shadow: 4px 2px 8px rgba(255, 255, 255, 0.9);
+    transition: .6s;
+}
+
+.div-links-inicios{
+    background-color: #e0eb4d;
+    border-radius: 50px;
+    margin-left: calc(100% - 95%);
+    margin-right: calc(100% - 95%);
+    box-shadow: 1px 2px 10px rgba(10, 10, 10, 0.8);
+    justify-content: center;
+    align-items: center;
+    margin-bottom: calc(100% - 90%);
+    text-align: center;
+    margin-bottom: 15%;
+}
+
+.description-cabeça{
+    font-size: 60px;
+    background-color: #444;
+    color: #e0eb4d;
+    text-shadow: 2px 2px 10px rgba(205, 205, 205, 1);
+    border-radius: 20px;
+    margin-top: 1px;
+    margin-left: calc(100% - 85%);
+    margin-right: calc(100% - 85%);
+    padding-left: calc(100% - 90%);
+    padding-right: calc(100% - 90%);
+    transition: .6s;
+}
+
+.description-cabeça:hover{
+    transform: scale(1.2);
+    transition: .6s;
+}
+
+.menu-_-{
+    font-size: 60px;
+    background-color: #555;
+    color: #eee;
+    text-shadow: 1px 2px 5px rgba(245, 245, 245, 0.8);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.carregar{
+    background-color: #333;
+    border-radius: 50px;
+    width: 100%;
+    height: 100%;
+}
+
+#otime{
+    margin-bottom: 0px;
+}
+
+.links-inicios{
+    display: inline-block;
+    width: auto;
+    height: 300px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.links-inicios a{
+    text-decoration: none;
+    color: #555;
+    font-size: 45px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(245, 245, 245, 0.9);
+    transition: .6s;
+}
+
+.links-inicios a:hover{
+    text-decoration: none;
+    color: #fff;
+    font-size: 50px;
+    display: flex;
+    text-shadow: 2px 1px 10px rgba(5, 5, 5, 0.8);
 }
 
 .text-d{
@@ -225,6 +320,27 @@ ul {
     margin-right: calc(100% - 90%);
     margin-bottom: calc(100% - 90%);
     box-shadow: 2px 1px 10px rgba(5, 5, 5, 0.8);
+    margin-top: calc(100% - 90%);
+    transform: translateY(0px);
+    animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%{
+        transform: translateY(0px);
+    }
+    25%{
+        transform: translateY(-15px);
+    }
+    50%{
+        transform: translateY(-30px);
+    }
+    75%{
+        transform: translateY(-15px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
 }
 
 .description{
